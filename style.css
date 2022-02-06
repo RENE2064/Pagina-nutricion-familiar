@@ -78,8 +78,31 @@ section {
   background-color: black;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .main__parrafo {
+    font-size: 3rem;
+  }
   .pie__pagina {
     height: 6rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .main__title {
+    font-size: 2rem;
+    font-family: calibri;
+  }
+  .main__img__title {
+    width: 10rem;
+    height: 10rem;
+  }
+  .main__parrafo {
+    font-size: 1.7rem;
+  }
+  .main__img {
+    width: 28rem;
+    height: 28rem;
+  }
+  .main__container2 {
+    align-items: center;
   }
 }
