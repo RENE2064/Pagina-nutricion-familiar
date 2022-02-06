@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+section {
+  display: flex;
+}
+.hero {
+  width: 100%;
+  padding: 2rem;
+  background-color: hotpink;
+}
+.container__img {
+  width: 10rem;
+  height: 10rem;
+  display: block;
+}
+.container {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  display: inline-block;
+  font-size: 2rem;
+  font-family: calibri;
+  margin: 1rem;
+}
+
+.main__hero {
+  width: 100%;
+  height: 74vh;
+  background-color: lightgrey;
+}
+.main__title {
+  text-align: center;
+  font-size: 6rem;
+  font-family: calibri;
+}
+.main__img__title {
+  display: block;
+  width: 17rem;
+  height: 17rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+.main__parrafo {
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: calibri;
+  margin-top: 5rem;
+  margin-right: 1.5rem;
+}
+.main__container {
+  width: 40%;
+  height: 79.8vh;
+}
+.main__container2 {
+  width: 60%;
+  height: 79.8;
+  align-items: center;
+}
+.main__img {
+  display: block;
+  padding: 6rem;
+  margin: auto;
+  margin-top: 6rem;
+  width: 40rem;
+  height: 40rem;
+}
+.pie__pagina {
+  width: 100%;
+  height: 4.1rem;
+  background-color: black;
+}
+
+@media screen and (min-width: 1440px) {
+  .pie__pagina {
+    height: 6rem;
+  }
+}

@@ -1,0 +1,14 @@
+.main__title {
+  font-size: 3.5rem;
+}
+.main__img__title {
+  width: 10rem;
+  height: 10rem;
+}
+.main__parrafo {
+  font-size: 2.6rem;
+}
+.pie__pagina {
+  height: 6rem;
+  background-color: black;
+}
