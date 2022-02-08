@@ -1,13 +1,17 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0; /* MALA PRACTICA */
+  padding: 0; /* MALA PRACTICA */
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
   font-size: 62.5%;
-}
-section {
-  display: flex;
 }
 .hero {
   width: 100%;
@@ -15,11 +19,12 @@ section {
   background-color: hotpink;
 }
 .container__img {
-  width: 10rem;
-  height: 10rem;
+  width: 6rem;
+  height: 6rem;
   display: block;
 }
 .container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -30,8 +35,8 @@ section {
   font-family: calibri;
   margin: 1rem;
 }
-
 .main__hero {
+  display: flex;
   width: 100%;
   height: 74vh;
   background-color: lightgrey;
@@ -61,16 +66,17 @@ section {
 }
 .main__container2 {
   width: 60%;
-  height: 79.8;
-  align-items: center;
+  height: 79.8vh;
+  align-items: flex-start;
+  justify-content: center;
 }
 .main__img {
   display: block;
   padding: 6rem;
   margin: auto;
   margin-top: 6rem;
-  width: 40rem;
-  height: 40rem;
+  width: 25rem;
+  height: 25rem;
 }
 .pie__pagina {
   width: 100%;
@@ -87,6 +93,53 @@ section {
   }
 }
 @media screen and (min-width: 375px) and (max-width: 425px) {
+  body {
+    background-color: lightgray;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main__container2,
+  .main__container {
+    width: 50%;
+    height: fit-content;
+  }
+  .main__container3 {
+    width: 100%;
+  }
+  .hero {
+    padding: 0;
+  }
+  .main__hero {
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+
+  .main__img {
+    margin-top: -15px;
+  }
+
+  .navigation {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .nav__userLink {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
   .main__title {
     font-size: 2rem;
     font-family: calibri;
@@ -98,11 +151,16 @@ section {
   .main__parrafo {
     font-size: 1.7rem;
   }
-  .main__img {
-    width: 28rem;
-    height: 28rem;
+  picture .main__img {
+    width: 10rem;
+    height: 10rem;
   }
   .main__container2 {
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
+  }
+  .pie__pagina {
+    position: absolute;
+    bottom: 0;
   }
 }
